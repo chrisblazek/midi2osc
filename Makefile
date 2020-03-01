@@ -21,7 +21,7 @@ endif
 ifeq ($(UNAME_S), Darwin) #APPLE
 	ECHO_MESSAGE = "Mac OS X"
 	LIBS = -framework OpenGL -framework Cocoa -framework IOKit -framework CoreVideo
-	LIBS += -L/usr/local/lib -lglfw3 -lportmidi -headerpad_max_install_names
+	LIBS += -L/usr/local/lib -lglfw -lportmidi -headerpad_max_install_names
 
 	CXXFLAGS = -Iimgui/ -Iimgui/examples/libs/gl3w -Iimgui/examples/libs
 	CXXFLAGS += -I/usr/local/include 
